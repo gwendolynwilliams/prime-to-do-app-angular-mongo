@@ -1,0 +1,19 @@
+{
+  "name": "to-do-app-mongo-angular",
+  "version": "1.0.0",
+  "description": "Replace jQuery with Angular Your clientside will be refactored to use Angular. This means all your DOM manipulation will be changed to use Angular data binding and ng-repeats for display. Event listeners will have to change to ng-click or other Angular ngEvents.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Gwendolyn Williams",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-route": "^1.5.0",
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.6"
+  }
+}

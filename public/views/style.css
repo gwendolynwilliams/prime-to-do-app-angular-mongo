@@ -1,0 +1,99 @@
+body {
+    color: dimgray;
+    font-size: 15px;
+    font-family: 'Lato', open-sans, sans-serif;
+    background-color: moccasin;
+}
+
+h1 {
+    color: indianred;
+    font-size: 150px;
+    font-family: 'Lato', open-sans, sans-serif;
+    font-weight: 200;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+
+h2 {
+    color: indianred;
+    font-size: 24px;
+    font-family: 'Lato', open-sans, sans-serif;
+    font-weight: 200;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+
+p {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+#container {
+    display: block;
+    width: 500px;
+    margin: 50px auto 0 auto;
+
+}
+
+#content {
+    horiz-align: center;
+}
+
+#submit {
+    background:url("../images/add.png");
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    float: right;
+    border: none;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+#completed-tasks {
+    margin-top: 50px;
+}
+
+.button-delete {
+    background:url("../images/trash.png");
+    background-size: contain;
+    float: right;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 6px;
+}
+
+.button-complete {
+    background:url("../images/circle.png") no-repeat;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: none;
+    margin-right: 5px;
+    vertical-align: bottom;
+}
+
+#task {
+    margin-top: 10px;
+}
+
+*:focus {
+    outline: none;
+}
+
+.checked {
+    background:url("../images/circle_checked.png") no-repeat;
+}
+
+.strikeout {
+    text-decoration: line-through;
+}
+
+.complete {
+    color: #ea7d7d;
+    font-size: 10px;
+}

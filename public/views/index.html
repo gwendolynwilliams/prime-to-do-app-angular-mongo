@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>To Do - Angular Mongo</title>
+    <script type="text/javascript" src="/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="/vendors/angular-route.min.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/factories/dataFactory.js"></script>
+    <script type="text/javascript" src="/vendors/sweetalert.min.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/mainController.js"></script>
+
+    <link rel="stylesheet" href="/views/style.css" />
+
+</head>
+<body ng-app="myApp" ng-controller="MainController">
+<h1>TO DO</h1>
+<div id="container">
+    <div id="content">
+        <form id="task-form">
+            <p><label for="task">Add an item to do:</label><br/>
+                <input type="text" id="task" name="task" size="60" ng-model="taskToAdd" />
+                <button id="submit" ng-click="addTask()"></button></p>
+
+            <p ng-repeat="task in tasks" ng-model="tasks">
+                <button class="button-complete" id="{{task._id}}" ng-click="completeTask(task._id)" ng-class="checked"></button>
+                {{task.task}}
+                <span class="complete" ng-show="task.completed == true"> (complete!)</span>
+                <button class="button-delete" id="{{task._id}}" ng-click="deleteTask(task._id)"></button></p>
+        </form>
+        <div id="tasks">
+            <main ng-view></main>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+</body>
+</html>
