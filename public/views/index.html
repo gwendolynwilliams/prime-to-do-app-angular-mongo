@@ -22,7 +22,7 @@
                 <button id="submit" ng-click="addTask()"></button></p>
 
             <p ng-repeat="task in tasks" ng-model="tasks">
-                <button class="button-complete" id="{{task._id}}" ng-click="completeTask(task._id)" ng-class="checked"></button>
+                <button class="button-complete" id="{{task._id}}" ng-click="completeTask(task._id)" ng-class="{true:'checked', false:''}"></button>
                 {{task.task}}
                 <span class="complete" ng-show="task.completed == true"> (complete!)</span>
                 <button class="button-delete" id="{{task._id}}" ng-click="deleteTask(task._id)"></button></p>
@@ -35,6 +35,7 @@
 </div>
 
 
+<!--<li ng-class="{'active':selectedTab === 'users'}" ng-click="selectedTab = 'users'"><a href="#users" >Users</a></li>-->
 
 
 

@@ -17,6 +17,7 @@ myApp.factory('DataFactory', ['$http', function($http) {
         return promise;
     };
 
+    //best practice
     function deleteTask(id) {
         var promise = $http.delete('/deleteTask/' + id).then(function (response) {
             console.log('delete response:', response);

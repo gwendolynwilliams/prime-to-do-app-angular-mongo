@@ -6,8 +6,7 @@ myApp.controller('MainController', ['$scope', '$http', 'DataFactory', function($
 
         var taskToAdd = {
             task: $scope.taskToAdd,
-            completed: false,
-            deleted: false
+            completed: false
         };
         $scope.dataFactory.factoryAddTask(taskToAdd);
         $scope.taskToAdd = '';
@@ -25,7 +24,13 @@ myApp.controller('MainController', ['$scope', '$http', 'DataFactory', function($
 
     $scope.completeTask = function(id) {
         $scope.dataFactory.factoryCompleteTask(id)
+
+
+        $scope.class = "checked";
+
+
         getAllTasks();
+
     };
 
     function getAllTasks() {
